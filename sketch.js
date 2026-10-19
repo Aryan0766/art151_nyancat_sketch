@@ -28,15 +28,13 @@ let color = [
 
 let playbackRate = 1.0;
 
-function preload(){
-  nyan = loadSound('media/NyanCat.mp3');
-  noNyan = loadImage('media/NyanCatless.gif')
-  sprinkles = loadImage('sprinkles.jpg'); 
-}
 
-function setup() {
+async function setup() {
   createCanvas(400, 400);
 background(noNyan);
+   nyan = await loadSound('media/NyanCat.mp3');
+  noNyan = await loadImage('media/NyanCatless.gif')
+  sprinkles = await loadImage('sprinkles.jpg'); 
  
 }
 

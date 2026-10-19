@@ -1,7 +1,7 @@
 //ADD names of group members at top of sketch 
 //Please have each group member DUPLICATE THIS SKETCH and have it saved in your accounts
 //Everyone will be submitting their versions individually 
-//There are ~24 bugs
+//There are ~24 bugs + version control 
 //please add a comment to what was fixed or adjusted for each one. Note that you may need to delete stuff. 
 let nyan;
 let noNyan;

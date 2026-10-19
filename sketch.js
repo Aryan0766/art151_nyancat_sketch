@@ -41,7 +41,7 @@ function draw () {
   // Draw all circles
   for (let circle of circles) {
     fill(circle.color);
-    ellipse(circle.x, circle.y, 50, 50); // splling erros
+    ellipse(circle.x, circle.y, 50, 50); // splling errors
   }
 
 
@@ -56,7 +56,7 @@ function mousePressed () {
     color: color(c[0], c[1], c[2])
   };
   circles.push(newCircle);
-  nyan.setVolume(0.5); // spelliung errors
+  nyan.setVolume(0.5); // spelling errors
   nyan.rate(playbackRate); // spelling errors
   nyan.loop();
 
@@ -67,18 +67,17 @@ function mouseReleased () {
 }
 
 function keyPressed () {
-  if (keyCode === UP_ARROW);
+  if (keyCode === UP_ARROW) // had a : 
+  // require three = for all statements below 3
   {
-    playBackRate += 0.1;
+    playbackRate += 0.1;
     nyan.rate(playbackRate);
 
-  } else if (keyCode === DOWN_ARROW);
-  {
+  } else if (keyCode === DOWN_ARROW) { // down arrow needed to be all caps.
     playbackRate = max(0.1, playbackRate - 0.2);
     nyan.rate(playbackRate);
-  } else if (keyCode === LEFT_ARROW);
-  {
+  } else if (keyCode === LEFT_ARROW) {
     playbackRate = playbackRate * 1;
-    nyan.rate(playBackRate);
+    nyan.rate(playbackRate);
   }
 }
